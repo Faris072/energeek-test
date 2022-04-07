@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="id">
 <head>
-    <title>Title</title>
+    <title>Login</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -35,6 +35,11 @@
 <body>
 
     <div class="container-fluid px-4">
+        <div class="container m-auto">
+            <center>
+                <h1 style="color:rgb(255, 72, 72);"><b>Energeek</b></h1>
+            </center>
+        </div>
         <form action="/dashboard" id="login" class="p-5" method="POST">
             <center><h4><b>Silahkan Masuk</b></h4></center>
             <br>

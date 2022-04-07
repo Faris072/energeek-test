@@ -52,7 +52,7 @@
 
     <!-- nav -->
     <nav class="navbar navbar-light bg-light" style="box-shadow: 0 0 5px 2px lightgrey;">
-        <span class="navbar-brand mb-0 h1">Navbar</span>
+        <span class="navbar-brand mb-0 h1"><h3><b>Energeek</b></h3></span>
     </nav>
 
     @yield('content')

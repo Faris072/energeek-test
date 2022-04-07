@@ -6,13 +6,18 @@ body{
     width: 100vw;
     height: 100vh;
     display:flex;
+    flex-direction: column;
+    background-image: url('/asets/image/login2.svg');
+    background-repeat: no-repeat;
+    background-size: 30vw;
+    background-position: right bottom;
 }
 
 form{
     background-color: rgb(255, 255, 255);
     width: 450px;
     margin: auto;
-    /* padding:50px; */
+    margin-top:0;
     border-radius: 10px;
 }
 
