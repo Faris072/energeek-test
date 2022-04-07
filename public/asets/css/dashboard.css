@@ -1,4 +1,49 @@
 body {
-    background-color: rgb(231, 231, 240);
+    background-color: #f4f5f8;
     min-height: 100vh;
+}
+
+.page-item{
+    border-radius: 15px;
+    margin:5px;
+}
+
+.page-link {
+    border-radius: 10px;
+    border:none;
+    background-color:rgb(241, 241, 241);
+    color: black;
+}
+
+.page-link:hover{
+    color:black;
+    text-decoration:none;
+}
+
+.aktif{
+    background-color: rgb(255, 55, 55);
+    color:white;
+}
+
+.aktif:hover{
+    background-color: red;
+    color:white;
+}
+
+input[type="text"]{
+    font-size:20px;
+}
+
+input[type="password"]{
+    font-size:20px;
+}
+
+input[type="submit"]{
+    font-size:20px;
+}
+
+input[type="radio"]{
+    width:20px;
+    height:20px;
+    margin-top: 10px;
 }

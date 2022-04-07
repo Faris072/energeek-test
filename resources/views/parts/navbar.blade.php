@@ -51,7 +51,7 @@
 <body>
 
     <!-- nav -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light" style="box-shadow: 0 0 5px 2px lightgrey;">
         <span class="navbar-brand mb-0 h1">Navbar</span>
     </nav>
 
@@ -67,6 +67,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    {{-- custom js  --}}
+    <script src="/asets/js/{{ $js }}"></script>
 </body>
 
 </html>

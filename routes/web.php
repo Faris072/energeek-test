@@ -23,3 +23,10 @@ Route::get('/dashboard', function () {
         'js' => 'dashboard.js'
     ]);
 });
+
+Route::get('/history', function () {
+    return view('history', [
+        'css' => 'dashboard.css',
+        'js' => 'dashboard.js'
+    ]);
+});
