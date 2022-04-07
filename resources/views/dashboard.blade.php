@@ -32,13 +32,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="stokMin"><b>Stok Minimal</b></label>
-                                        <input type="text" name="stokMin" id="stokMin" placeholder="Stok Minimal" class="form-control">
+                                        <input type="number" name="stokMin" id="stokMin" placeholder="Stok Minimal" class="form-control">
                                         <small style="color:red;" id="msg-stokMin"></small>
                                         <br>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="stokAwal"><b>Stok Awal</b></label>
-                                        <input type="text" name="stokAwal" id="stokAwal" placeholder="Stok Awal" class="form-control">
+                                        <input type="number" name="stokAwal" id="stokAwal" placeholder="Stok Awal" class="form-control">
                                         <small style="color:red;" id="msg-stokAwal"></small>
                                         <br>
                                     </div>

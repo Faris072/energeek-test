@@ -23,15 +23,6 @@ function hapus() {
         });
 }
 
-// function buat(){
-//     $('#inventoryModal').modal('toggle');
-//     swal("Berhasil!", "Data berhasil dibuat!", "success");
-// }
-
-// function simpan(){
-//     $('#inventoryModal').modal('toggle');
-//     swal("Berhasil!", "Data berhasil disimpan!", "success");
-// }
 
 $('#btn-tambah').on('click', function(e) {
     e.preventDefault();
@@ -55,7 +46,7 @@ $('#btn-tambah').on('click', function(e) {
     else if(stokMin < 10){
         $('#msg-stokMin').text('Stok minimal harus lebih dari 10');
     }
-    else if(stokAwal >= 50){
+    else if(stokAwal > 50){
         $('#msg-stokAwal').text('Stok awal harus lebih dari kurang dari 51');
     }
     else{
@@ -103,5 +94,17 @@ $('#btn-tambah').on('click', function(e) {
             $('#msg-kodeBarang').text('Format kode harus karakter 1-3 huruf kapital, karakter 4 '-', karakter 5-7 angka. Contoh: BRG-001');
         }
     }
+});
 
+$('#btn-history').on('click', function(e) {
+    e.preventDefault();
+    let jumlahBarang = $('#jumlahBarang').val();
+
+    if(jumlahBarang.length < 1){
+        $('#msg-jumlahBarang').text('Tidak boleh kosong!');
+    }
+    else{
+        $('#inventoryModal').modal('toggle');
+        swal("Berhasil!", "Data berhasil ditambahkan!", "success");
+    }
 });
