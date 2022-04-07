@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',[
+        'js' => 'login.js'
+    ]);
 });
 
 Route::get('/dashboard', function () {
@@ -24,8 +26,21 @@ Route::get('/dashboard', function () {
     ]);
 });
 
+Route::get('/dashboarduser', function () {
+    return view('dashboarduser', [
+        'css' => 'dashboard.css',
+        'js' => 'dashboard.js'
+    ]);
+});
+
 Route::get('/history', function () {
     return view('history', [
+        'css' => 'dashboard.css',
+        'js' => 'dashboard.js'
+    ]);
+});
+Route::get('/historyuser', function () {
+    return view('historyuser', [
         'css' => 'dashboard.css',
         'js' => 'dashboard.js'
     ]);

@@ -1,8 +1,11 @@
+body{
+    background-color: #f4f5f8;
+}
+
 .container-fluid{
     width: 100vw;
     height: 100vh;
     display:flex;
-    background-color: rgb(231, 231, 240);
 }
 
 form{

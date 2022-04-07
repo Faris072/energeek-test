@@ -7,50 +7,6 @@
             <div class="col-lg-11 mx-auto">
                 <div class="inventory d-flex">
                     <h2><b>Inventory</b></h2>
-                    <a href="#" class="btn btn-danger pt-2 ml-3 px-3" data-toggle="modal" data-target="#inventoryModal"><h5><i class="fas fa-plus"></i> Tambah data</h5></a>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="inventoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Tambah Data Baru</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="" style="font-size: 18px" id="tambahBarang">
-                                <label for="kodeBarang"><b>Kode Barang</b></label>
-                                <input type="text" name="kodeBarang" id="kodeBarang" placeholder="Kode Barang" class="form-control">
-                                <small style="color:red;" id="msg-kodeBarang"></small>
-                                <br>
-                                <label for="namaBarang"><b>Nama Barang</b></label>
-                                <input type="text" name="namaBarang" id="namaBarang" placeholder="Nama Barang" class="form-control">
-                                <small style="color:red;" id="msg-namaBarang"></small>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="stokMin"><b>Stok Minimal</b></label>
-                                        <input type="text" name="stokMin" id="stokMin" placeholder="Stok Minimal" class="form-control">
-                                        <small style="color:red;" id="msg-stokMin"></small>
-                                        <br>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="stokAwal"><b>Stok Awal</b></label>
-                                        <input type="text" name="stokAwal" id="stokAwal" placeholder="Stok Awal" class="form-control">
-                                        <small style="color:red;" id="msg-stokAwal"></small>
-                                        <br>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                        <button type="button" class="btn btn-danger" id="btn-tambah">Simpan</button>
-                        </div>
-                    </div>
-                    </div>
                 </div>
                 <br>
                 <div class="card rounded shadow border-0">
@@ -90,9 +46,7 @@
                                         <td>1</td>
                                         <td>10</td>
                                         <td align="center"><span class="p-1 bg-primary" style="color:white; border-radius:5px;">Aman</span></td>
-                                        <td align="center" style="border:none;"><a href="#"><i class="fas fa-edit" style="color:grey;"></i></a></td>
-                                        <td align="center" style="border:none;"><a href="/history"><i class="fas fa-history" style="color:grey;"></i></a></td>
-                                        <td align="center" style="border:none;"><a href="#" onclick="hapus()"><i class="fas fa-trash-alt" style="color:grey;"></i></a></td>
+                                        <td align="center" style="border:none;"><a href="/historyuser"><i class="fas fa-history" style="color:grey;"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -35,14 +35,16 @@
 <body>
 
     <div class="container-fluid px-4">
-        <form action="/dashboard" class="p-5" method="POST">
+        <form action="/dashboard" id="login" class="p-5" method="POST">
             <center><h4><b>Silahkan Masuk</b></h4></center>
             <br>
-            <input type="text" name="username" placeholder="Username" class="form-control">
+            <input type="text" name="username" id="user" placeholder="Username" class="form-control">
+            <small style="color:red;" id="msg-user"></small>
             <br>
-            <input type="password" name="password" placeholder="Password" class="form-control">
+            <input type="password" id="pass" name="password" id="pass" placeholder="Password" class="form-control">
+            <small style="color:red;" id="msg-pass"></small>
             <br>
-            <input type="submit" name="submit" class="form-control btn btn-danger" value="Masuk">
+            <input type="submit" name="submit" id="btn-login" class="form-control btn btn-danger" value="Masuk">
         </form>
     </div>
 
@@ -51,5 +53,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {{-- custom js --}}
+    <script src="/asets/js/{{ $js }}"></script>
 </body>
 </html>
