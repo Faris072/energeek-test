@@ -1,0 +1,26 @@
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    background-color: rgb(231, 231, 240);
+}
+
+form{
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    margin: auto;
+    /* padding:50px; */
+    border-radius: 10px;
+}
+
+input[type="text"]{
+    font-size:20px;
+}
+
+input[type="password"]{
+    font-size:20px;
+}
+
+input[type="submit"]{
+    font-size:20px;
+}
